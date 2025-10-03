@@ -15,12 +15,21 @@ body {
 /* info buurtcampus */
 .header_theme {
     display:flex;
+    height: 70px;
+    width: 70px;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    background-color: rgb(180, 189, 208);
 }
 
 .header_info {
     
+}
+
+.img_voorpagina{
+    display: block;
+    margin-inline: 1.5rem;
+    height: auto;
 }
 
 .info_buurtcampus {
