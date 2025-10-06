@@ -1,44 +1,8 @@
 /* CSS */
-body {
-    font-family: sans-serif;
-    font-size: 20px;
-    line-height: 1.4;
-
-     /* Dit is ons eerste breakpoint, waarbij we het body element in Grid Layout zetten */
-    @media (min-width: 480px) {
-        display: flex;
-        justify-items: center;
-    }
-}
 
 
 /* info buurtcampus */
-.header_theme {
-    display:flex;
-    height: 70px;
-    width: 70px;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(180, 189, 208);
-}
 
-.header_info {
-    
-}
-
-.img_voorpagina{
-    display: block;
-    margin-inline: 1.5rem;
-    height: auto;
-}
-
-.info_buurtcampus {
-
-}
-
-.tanja_container {
-
-}
 /* oost */
 /** oost-box **/
 
