@@ -6,24 +6,56 @@
         <title>Document</title>
         <link rel="stylesheet" href="styles/styles.css">
     </head>
+
     <!--========== info buurtcampus ==========-->
     <body>
         <header class="header_theme">
-            <img src="assets/Lang_Blurple.jpg" width="300" height="45" class="logo">  
-            <button><a href="index-nieuw-west.html">nieuw-west</a></button>
-            <button><a href="index-oost.html">oost</a></button>
-            <button><a href="index-zuid-oost.html">zuid-oost</a></button>
-        </header>
-        <section class="header_info">    
             <h1>Buurtcampus</h1>
-            <h3>Hogeschool van Amsterdam</h3>
-            <h4>Waar leren tot leven komt!</h4>
-        </section>
-        <div class="img_voorpagina">
-            <img src="assets/IMG_voorpagina.jpg" width="600" height="500" class="voorpagina">
-        </div>    
+            <h4>Hogeschool van Amsterdam</h4>
+        </header>
+
+        <nav>  
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#">Nieuws</a></li>
+                <li><a href="#">Voor wie</a></li>
+                <li><a href="#">Over</a></li>
+                <li><a href="#">Projecten</a></li>
+                <li><a href="#">Vacatures</a></li>
+                <li><a href="#">Agenda</a></li>
+                <li><a href="#">Nederlands</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul> 
+            <ul>
+                <li class="hideOnMobile"><a href="#">Contact</a></li>
+                <li class="hideOnMobile"><a href="#">Nieuws</a></li>
+                <li class="hideOnMobile"><a href="#">Voor wie</a></li>
+                <li class="hideOnMobile"><a href="#">Over</a></li>
+                <li class="hideOnMobile"><a href="#">Projecten</a></li>
+                <li class="hideOnMobile"><a href="#">Vacatures</a></li>
+                <li class="hideOnMobile"><a href="#">Agenda</a></li>
+                <li class="hideOnMobile"><a href="#">Nederlands</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>  
+        </nav>
+
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+
+        <figure class="img_voorpagina">
+            <img src="assets/IMG_voorpagina.jpg" width="300" height="200" class="voorpagina">
+            <h3>Waar leren tot leven komt!</h3>
+        </figure>    
         
-        <section class="info_buurtcampus">
+        <article class="info_buurtcampus">
             <h2>De Buurtcampus in drie vragen: een korte gids </h2>
 
             <p>De Buurtcampus is een leeromgeving van de Hogeschool van Amsterdam in samenwerking met de Openbare Bibliotheek van Amsterdam. Drie Buurtcampussen in verschillende stadsdelen - Zuidoost, Nieuw-West en Oost - richten zich op actuele uitdagingen in de wijken van Amsterdam.</p>
@@ -38,24 +70,58 @@
 
             <h3>Een rijke leeromgeving, wat is dat?</h3>
             <p>Het Buurtcampusteam zet zich in om studenten vanuit allerlei vakgebieden en expertises te verbinden aan wijkorganisaties en buurtbewoners. Ook zorgt de Buurtcampus ervoor dat de samenwerkingen met buurtbewoners, wijkorganisaties en opleidingen langdurig zijn. Zo kunnen ze samen terugkerende programma’s opzetten voor de buurt. Studenten en onderzoekers delen hun kennis met de buurt via sociale media, presentaties, activiteiten, meet-ups, bijeenkomsten en spreekuren. Op deze manier vormt de Buurtcampus een rijke leeromgeving.</p>
-        </section>    
+        </article>    
         
 
         <main>
-            <section class="tanja_container">
+            <article class="tanja_container">
                 <h3>In gesprek met stadsdeelvoorzitter Tanja Jadnanansing: een inspirerend gastcollege over rechtvaardigheid en bestuur</h3>
 
                 <p>Tanja Jadnanansing, voorzitter van het bestuur in stadsdeel Zuidoost, geeft jaarlijks een gastles aan studenten Bestuurskunde tijdens het vak De Rechtvaardige Stad. Ze bespreekt haar visie op rechtvaardigheid en de rol van bestuurders in onze samenleving, en reflecteert op ervaringen en inzichten die ze graag doorgeeft aan studenten. </p>
-            </section>
+            </article>
 
-                    
+            <nav class="button_locaties">
+               <div class="container">
+                <div class="card__container">
+                    <article class="card__article">
+                        <img src="assets/imageOOSTjpeg.jpeg" alt="image" class="card__img">
+
+                        <div class="card__data">
+                            <span class="card__description">Buurtcampus</span>
+                                <h2 class="card__title">Amsterdam Oost</h2>
+                                <a href="#" class="card__button">Lees Meer</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article">
+                        <img src="assets/Karin van de Wiel_ESRA_WESTjpg.jpg" alt="image" class="card__img">
+
+                        <div class="card__data">
+                            <span class="card__description">Buurtcampus</span>
+                                <h2 class="card__title">Amsterdam Nieuw-West</Nieuw-West></h2>
+                                <a href="#" class="card__button">Lees Meer</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article">
+                        <img src="assets/WEB Straat020 2.jpg" alt="image" class="card__img">
+
+                        <div class="card__data">
+                            <span class="card__description">Buurtcampus</span>
+                                <h2 class="card__title">Amsterdam Zuid-Oost</h2>
+                                <a href="#" class="card__button">Lees Meer</a>
+                        </div>
+                    </article>
+                </div>
+               </div>
+            </nav>
+           
         </main>
 
         <!--========== Footer ==========-->
         <footer>
 
         </footer>
- 
 
 </body>
 </html>
